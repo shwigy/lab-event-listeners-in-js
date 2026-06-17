@@ -31,6 +31,10 @@ function resetBackgroundColor() {
 // Function to display the key pressed by the user
 function displayKeyPress(event) {
   // Implement the function to display key pressed
+  const displayParagraph = document.getElementById('keyPressDisplay');
+  if (displayParagraph) {
+    displayParagraph.textContent = `Key Pressed: ${event.key}`;
+  }
 }
 
 // Process Text Input
@@ -38,6 +42,12 @@ function displayKeyPress(event) {
 // Function to display user input in real-time
 function displayUserInput() {
   // Implement the function to display user input
+  const inputField = document.getElementById('textInput');
+  const displayParagraph = document.getElementById('textInputDisplay');
+  
+  if (inputField && displayParagraph) {
+    displayParagraph.textContent = `You typed: ${inputField.value}`;
+  }
 }
 
 // Attach Event Listeners
