@@ -33,9 +33,10 @@ function displayKeyPress(event) {
   // Implement the function to display key pressed
   const displayParagraph = document.getElementById('keyPressDisplay');
   if (displayParagraph) {
-    displayParagraph.textContent = `Key Pressed: ${event.key}`;
+    displayParagraph.textContent = `Key pressed: ${event.key}`;
   }
-}
+} // im confused :( 
+// edit: I had to change "Pressed" to "pressed" ...
 
 // Process Text Input
 
